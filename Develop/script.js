@@ -9,7 +9,10 @@ var hasLowerCase = confirm ('Do you want to use Lower case?');
 var hasUpperCase = confirm ('Do you want to use Upper case');
 var passLength = prompt ("Pick a number from 8 to 128");
 
+//initializing a variable to store an array depending on what the user chooses
 var superArray = [];
+
+//initializing a variable to store the password
 var password = [];
 
 if (hasSymbols) {
@@ -19,24 +22,28 @@ if (hasLowerCase){
   superArray = superArray.concat(lowerCase)
 }
 if (hasUpperCase){
-  superArray = superArray.concat(lowerCase)
+  superArray = superArray.concat(upperCase)
 }
-if (superArray.length === 0){
+if (superArray.length === 0 || passLength === "0"){
   alert("All of your selections were 'N'. we cannot create a password, if you don't make any selections. Stop trying to break my code 🧐")
+}
+if (passLength < 8 ){
+  alert("Your password needs to be longer than 7 characters")
 }
 console.log("Super array", superArray)
 
-// Randomizes the superArray to reduce the chances the function cutSuperArray slices the array equally every time
+// Function to randomizes the superArray
 for (var i = 0; i < passLength; i++) {
     var randomNumber = Math.floor(Math.random() * superArray.length)
     password.push(superArray[randomNumber]) 
 }
-
+    
 var finalPassword = password.join('');
 
 return finalPassword
 
 }
+
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
