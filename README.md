@@ -20,6 +20,7 @@ Access the website
 Answers the prompt according to your needs
 Copy the random generated password
 
+
 ## Topics
 
 During this practice I reinforced the following knowledge:
@@ -33,4 +34,9 @@ During this practice I reinforced the following knowledge:
 ## Support
 
 This project is mantained by me. Please send an email to ajdearmas13@gmail.com for support. 
+
+
+## Support
+
+N/A
 
