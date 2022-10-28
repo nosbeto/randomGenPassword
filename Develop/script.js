@@ -28,7 +28,10 @@ if (superArray.length === 0 || passLength === "0"){
   alert("All of your selections were 'N'. we cannot create a password, if you don't make any selections. Stop trying to break my code 🧐")
 }
 if (passLength < 8 ){
-  alert("Your password needs to be longer than 7 characters")
+  alert("Your password needs to be longer than 7 characters. Stop trying to break my code 🧐")
+}
+if (passLength > 128) {
+  alert("Your password cannot be longer than 128 characters. Stop trying to break my code 🧐")
 }
 console.log("Super array", superArray)
 
