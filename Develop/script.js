@@ -26,11 +26,11 @@ if (hasUpperCase){
 }
 if (superArray.length === 0 || passLength === "0"){
   alert("All of your selections were 'N'. we cannot create a password, if you don't make any selections. Stop trying to break my code 🧐")
-  return 'Click on "Generate Password again" and try again'
+  return 'Click on "Generate Password" and try again'
 }
 if (passLength < 8 ){
   alert("Your password needs to be longer than 7 characters");
-  return 'Click on "Generate Password again" and try again'
+  return 'Click on "Generate Password" and try again'
 }
 console.log("Super array", superArray)
 
